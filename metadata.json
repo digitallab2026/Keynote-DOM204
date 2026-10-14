@@ -1,0 +1,8 @@
+{
+  "name": "Sổ tay Kinh doanh sàn TMĐT",
+  "description": "Sổ tay ôn tập Shopee & TikTok Shop: nghiên cứu thị trường, chiến lược 4Ps, tối ưu gian hàng, marketing nội sàn, quảng cáo trả phí và vận hành TMĐT.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

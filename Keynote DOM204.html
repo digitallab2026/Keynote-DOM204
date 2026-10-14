@@ -82,6 +82,13 @@ mark.on{background:var(--mark-on);color:#1d1400;box-shadow:0 0 0 2px var(--mark-
 .shell{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);min-height:calc(100vh - var(--top))}
 .sidebar{position:sticky;top:calc(var(--top) + env(safe-area-inset-top,0px));height:calc(100vh - var(--top));overflow:auto;border-right:1px solid var(--line);background:var(--surface);padding:18px 12px 28px}
 .part{margin-bottom:20px}
+.part.part-1{background:var(--brand-soft);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:10px 6px 8px;margin-bottom:22px}
+.part.part-1 .part-label{color:var(--brand-text);padding:0 8px 6px;border-bottom:1px solid rgba(20,83,45,.15);margin-bottom:6px}
+.part.part-1 .part-label .pn{background:var(--brand);color:var(--brand-ink);padding:1px 6px;border-radius:4px;font-size:10px;font-weight:800}
+.part.part-1 .nav-item{color:var(--fg);font-weight:600}
+.part.part-1 .nav-item:hover{background:var(--surface)}
+.part.part-1 .nav-item.active{background:var(--surface);color:var(--brand-text);box-shadow:0 1px 4px rgba(20,40,28,.08);font-weight:700}
+.part.part-1 .nav-ico{color:var(--brand-text)}
 .part-label{display:flex;align-items:baseline;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0 10px 8px}
 .part-label .pn{color:var(--brand-text)}
 .nav-item{display:flex;gap:10px;align-items:flex-start;padding:7px 10px;border-radius:8px;text-decoration:none;color:var(--fg);font-size:14px;line-height:1.35}
@@ -242,7 +249,7 @@ main{min-width:0;padding-inline:clamp(16px,4vw,48px);padding-block:28px 64px}
 
 <div class="shell">
   <aside class="sidebar" id="sidebar" aria-label="Danh mục">
-    <div class="part">
+    <div class="part part-1">
       <div class="part-label"><span class="pn">Phần 1</span>Slide &amp; Tài liệu</div>
       <a class="nav-item" href="#tai-lieu" data-view="tai-lieu"><span class="nav-ico"><svg viewBox="0 0 20 20"><rect x="2.5" y="3.5" width="15" height="10" rx="1.5"/><path d="M10 13.5v3M6.5 16.5h7"/></svg></span><span class="t">Slide bài giảng</span></a>
       <a class="nav-item" href="#tai-lieu-tk" data-view="tai-lieu" data-jump="tai-lieu-tk"><span class="nav-ico"><svg viewBox="0 0 20 20"><path d="M8 12l4-4M7 9.5 5.2 11.3a2.6 2.6 0 0 0 3.6 3.6L10.5 13M13 10.5l1.8-1.8a2.6 2.6 0 0 0-3.6-3.6L9.5 7"/></svg></span><span class="t">Tài liệu tham khảo</span></a>
